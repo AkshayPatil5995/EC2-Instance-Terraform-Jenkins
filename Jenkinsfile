@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('GIT_Clone') {
       steps {
-        checkout changelog: false, poll: false, scm: [$class: 'GitSCM', branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/codvatechlabs/tf-jenkins.git']]]
+        checkout changelog: false, poll: false, scm: [$class: 'GitSCM', branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/AkshayPatil5995/tf-ec2-jenkins.git']]]
            }
     }
     stage('Terraform_Apply') {
